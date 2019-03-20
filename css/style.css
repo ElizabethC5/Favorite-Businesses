@@ -1,0 +1,192 @@
+/* Favorites and Avoids *?
+/*f This makes the site keep its size on small screens like cell phones so that the text is not too small to read */
+@viewport {
+  width: device-width;
+  zoom: 1.0 ;
+}
+
+/* box-sizing: border-box includes padding and border in total width and height of elements */
+* {
+  box-sizing: border-box;
+}
+
+p{
+font-family: "Verdana", sans-serif;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+
+
+/* grid column list, half/columns available too for wide tablet and computer screens */
+@media screen and (min-width: 950px) {
+
+.col-1 {width: 8.33%;}
+.col-1.5 {width: 12.50%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-7.5 {width: 62.50;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div.links {
+  font-size: 24px;
+}
+
+div.notbold {
+font-size: 32px;
+font-color: #000000;
+}
+
+div.introtext {
+  font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 949px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-1.5 {width: 12.50%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+div.links {
+  font-size: 16px;
+}
+
+div.notbold {
+font-size: 32px;
+font-color: #000000;
+}
+
+div.introtext {
+  font-size: 16px;
+}
+
+div.center{
+  margin: 50px auto;
+}
+
+}
+
+@media screen and (max-width: 745px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-1.5 {width: 12.50%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+div.links {
+  font-size: 12px;
+}
+
+div.notbold {
+font-size: 24px;
+font-color: #000000;
+}
+
+div.hide {
+  display: none;
+}
+
+div.introtext {
+  font-size: 12px;
+}
+
+div.center{
+  margin: 50px auto;
+}
+
+}
+
+.containertitle {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f5c16c;
+}
+
+.text1 {
+  font-size: 24px;
+margin:0 0 0 0;
+  color: #000000;
+}
+
+.bullet {
+  margin-top: 5px;
+height: 75px;
+width: 75px;
+}
+
+.empty {
+  margin-top: 5px;
+height: 75px;
+width: 75px;
+}
+
+.text2 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.emptyrow {
+height: 10px;
+}
+
+/* some pics must be rotated for better presentation */
+.rotate90 {
+  transform: rotate(90deg);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kawaiipics {
+  width:500px;
+  height:500px;
+}
+
+/* this keeps decorative images smaller */
+img{
+max-width:100%;
+max-height:100%;
+}
+
+.footertext {
+font-size: 0.75em;
+}
